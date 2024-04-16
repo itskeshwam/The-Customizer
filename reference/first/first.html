@@ -1,0 +1,100 @@
+<html>
+<head>
+    <!--This meta below disables the pinch in mobile for zoom in and out-->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="first.css">
+
+    <!-- Big thanks to https://realfavicongenerator.net/ for this easy icon work.
+         Thanks to https://icons8.com/ for the free icon. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>GLcalc</title>
+    <script src="first.js"></script>
+    <audio id="audio" src="sound/click.wav" autoplay="false"></audio>
+</head>
+<body>
+  <div id="outer">
+    <div id="inner_fixed">
+      <div class="display">
+        <p class="calculation" id="calculation" >0</p>
+        <!-- <p class="cursor">|</p> -->
+      </div>
+    </div>
+    <div id="inner_remaining">
+      <div class="button_container">
+          <div class="cal_button">
+            <button class="button" id="AC" onclick="forClear()">AC</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="parentheses()">( )</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="percentage()">%</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('/')">/</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('7')">7</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('8')">8</button>
+          </div>
+          <div class="cal_button">
+            <button class="button"onclick="forDisplay('9')">9</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('*')">x</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('4')">4</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('5')">5</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('6')">6</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('-')">-</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('1')">1</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('2')">2</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('3')">3</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('+')">+</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('0')">0</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="forDisplay('.')">.</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="deleteChar()">del</button>
+          </div>
+          <div class="cal_button">
+            <button class="button" onclick="solveDisplay()">=</button>
+          </div>
+      </div>
+    </div>
+    <!-- <div id="footer_fixed">
+      <div id="credit">
+        <p>Calculator created by <a href="https://Powersjo.com">Powersjo.com</a></p>
+      </div>
+    </div> -->
+  </div>
+</body>
+</html>

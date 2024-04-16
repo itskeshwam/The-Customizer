@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorButton</title>
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
+    <link rel="stylesheet" href="colorButton.css">
+</head>
+<body>
+    <div class="color-switcher">
+        <!-- <div class="switcher-btn">
+            <i class="fas fa-cog"></i>
+        </div> -->
+        <h3>select color</h3>
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" data-color="#8e44ad" style="background:#8e44ad ;"></span>
+            <span class="theme-buttons" data-color="#00aeff" style="background:#00aeff ;"></span>
+            <span class="theme-buttons" data-color="#ffd900" style="background:#ffd900 ;"></span>
+            <span class="theme-buttons" data-color="#ff0000" style="background:#ff0000 ;"></span>
+            <span class="theme-buttons" data-color="#ff03b3" style="background:#ff03b3 ;"></span>
+            <span class="theme-buttons" data-color="#ff6600" style="background:#ff6600 ;"></span>
+            <span class="theme-buttons" data-color="#eeff00" style="background:#dae71b ;"></span>
+            <span class="theme-buttons" data-color="#006eff" style="background:#006eff ;"></span>
+            <span class="theme-buttons" data-color="#00ff37" style="background:#00ff37 ;"></span>
+        </div>
+    </div>
+    <div class="container">
+        <h1>random text</h1>
+    </div>
+    <script>
+        // document.querySelector('.switcher-btn').onclick = () =>{
+        //     document.querySelector('.color-switcher').classList.toggle('active');
+        // };
+        let themeButtons = document.querySelectorAll('theme-buttons');
+        themeButtons.forEach(color =>{
+            color.addEventListener('click', () =>{
+                let dataColor = color.getAttribute('data-color');
+                document.querySelector(':root').style.setProperty('--main-color', dataColor);
+            });
+        });
+        
+    </script>
+</body>
+</html>

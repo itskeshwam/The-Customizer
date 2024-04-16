@@ -1,0 +1,121 @@
+.cal_button {
+    flex: 0 25%;
+    min-height: 40px;
+    height:20%;
+  }
+  
+  #outer {
+    display: flex;
+    flex-flow: column;
+    height: 75%;
+    align-items: center;
+  }
+/*   
+  #inner_fixed {
+    height: 13em;
+  } */
+  
+  #footer_fixed{
+    height: 3%;
+  }
+  
+  #inner_remaining {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #credit {
+    font-size: 100%;
+    font-style: normal;
+    text-align: center;
+  }
+  
+  .button {
+    color: #ffffff;
+    background-position: center;
+    transition: background 0.05s;
+    background-color: #ff6600;
+    /* box-shadow: 0 4px #999; */
+    padding: 10px 10px;
+    font-size: 330%;
+    width: 100%;
+    border-radius: 50px;
+    height: 100%;
+    border: none;
+  }
+  .button:hover{
+    background-color: rgb(0, 132, 255);
+  }
+  .button:active {
+    background-color: #45ec23;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  .display{
+    background-color: #999797;
+    min-height: 13em;
+    max-height: 20%;
+    min-width: 390px;
+    max-width: 400px;
+    border-radius: 18px;
+    position:relative;
+  }
+  
+  .wholePage{
+    background-color: white;
+  }
+  
+  .calculation{
+    position:relative;
+    left: -15px;
+    top: 18px;
+    font-size: 60px;
+    /* font-style: oblique; */
+    float: right;
+  }
+  
+  .wholeCalculator{
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  
+  .cursor{
+    flex: 0 auto;
+    font-size: 66px;
+    font-style: oblique;
+    position:absolute;
+    bottom:0;
+    right:0;
+    animation: blinker 1s linear infinite;
+  }
+  
+  /*  This function blinks the cursor in the display.*/
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .button_container{
+    display:flex;
+    flex-grow : 1;
+    flex-wrap:wrap;
+    flex-direction:row;
+    padding: 2px;
+    max-width: 400px;
+    min-width: 390px;
+    /* background-color: #33465b; */
+    border-radius: 18px;
+  }
+  
+  body {
+    background-color: #0a0b0f;
+      vertical-align: middle;
+      padding:0;
+      margin:0;
+  }

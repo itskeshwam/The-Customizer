@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/calculations.js" defer></script>
+    <script src="js/hide.js" defer></script>
+    <script src="js/colorPicker.js" defer></script>
+</head>
+
+<body class="main-background">
+    <div class="container">
+        <div class="edit-btn">
+            <button onclick="show_hide()">Edit</button>
+        </div>
+        <div id="editor-btn" class="editor">
+            <input type="checkbox" name="gradiant" id="gradiant">
+            <label for="gradiant">Gradiant Background</label><br>
+            <label>Background Color</label>
+            <input type="color" value="#F0F0F0" class="colorPicker1" id="colPick1">
+            <br>
+            <label>Button Color</label>
+            <input type="color" value="#F0F0F0" class="colorPicker2" id="colPick2">
+            <br>
+            <label>Output Color</label>
+            <input type="color" value="#F0F0F0" class="colorPicker3" id="colPick3">
+            <br>
+            <label>Font Color</label>
+            <input type="color" value="#F0F0F0" class="colorPicker4" id="colPick4">
+        </div>
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-all-clear class="span-two">AC</button>
+            <button data-delete>DEL</button>
+            <button data-divide data-operation>÷</button>
+            <button data-one data-number>1</button>
+            <button data-two data-number>2</button>
+            <button data-three data-number>3</button>
+            <button data-multi data-operation>*</button>
+            <button data-four data-number>4</button>
+            <button data-five data-number>5</button>
+            <button data-six data-number>6</button>
+            <button data-add data-operation>+</button>
+            <button data-seven data-number>7</button>
+            <button data-eight data-number>8</button>
+            <button data-nine data-number>9</button>
+            <button data-minus data-operation>-</button>
+            <button data-point data-number>.</button>
+            <button data-zero data-number>0</button>
+            <button data-equals class="span-two">=</button>
+        </div>
+    </div>
+</body>
+</html>
